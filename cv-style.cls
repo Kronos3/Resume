@@ -3,7 +3,6 @@
 \ProvidesClass{cv-style}[2015/02/27 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
-\DeclareOption{espanol}{\def\@cv@espanol{}}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
@@ -206,7 +205,7 @@
 \RequirePackage[left=5.6cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
-    pdftitle=CV/Resume \textbar{} Alejandro Pérez Londoño,
-    pdfauthor=Alejandro Pérez Londoño,
+    pdftitle=CV/Resume \textbar{} Andrei Tumbar,
+    pdfauthor=Andrei Tumbar,
     pdfsubject=CV/Resume%
     }

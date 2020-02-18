@@ -5,7 +5,12 @@
                                     % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
-
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=green!70!black
+}
 \begin{document}
 
 \header{Andrei}{ Tumbar}           % Your name
@@ -21,11 +26,12 @@
 Ithaca, NY
 ~
 Mobile no:
-607 379 0960
+607-379-0960
 ~
 Email:-
 at1777@rit.edu
-andreitumbar@gmail.com
+andreitumbar
+@gmail.com
 %
 %
 \section{Programming
@@ -120,8 +126,8 @@ Technologies:
 \begin{itemize}%[label=$\bullet$, leftmargin=*]
 	\item C-level socket TCP/IP with TLS layer (OpenSSL)
 	\item Linux Namespace and cgroups API for Linux environment isolation.
-	\item Django web-application front-end, \textbf{autogentoo.org} (rudimentary phase)
-	\item FOSS implementation, \textbf{https://github.com/AutoGentoo/AutoGentoo}
+	\item Django web-application front-end, \textbf{\href{https://autogentoo.org}{autogentoo.org}} (rudimentary phase)
+	\item FOSS implementation, \textbf{\href{https://github.com/AutoGentoo/AutoGentoo}{https://github.com/AutoGentoo/AutoGentoo}}
 \end{itemize}
 
 }
