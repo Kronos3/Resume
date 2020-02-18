@@ -121,7 +121,7 @@ Material Design
 {2014-now}
 {AutoGentoo }
 {github.com}
-{A scalable Linux environment manager for creating optimized Gentoo Linux environments. Designed to bring higher performance to any platform at low maintainence cost. \\
+{A scalable Linux environment manager for creating optimized Gentoo Linux environments. Designed to bring higher performance to any platform at low maintenance cost. \\
 Technologies:
 \begin{itemize}%[label=$\bullet$, leftmargin=*]
 	\item C-level socket TCP/IP with TLS layer (OpenSSL)
