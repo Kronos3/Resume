@@ -1,8 +1,7 @@
 % -- Encoding UTF-8 without BOM
 % -- XeLaTeX => PDF (BIBER)
 
-\documentclass[]{alternate}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
-                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+\documentclass[]{alternate} 
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
 \usepackage{hyperref}% http://ctan.org/pkg/hyperref
@@ -28,7 +27,7 @@
 205 Richard Pl 
 Ithaca, NY
 ~
-Mobile no:
+Cell:
 607-379-0960
 ~
 Email:-
@@ -46,12 +45,10 @@ AJAX, \LaTeX{}
 %
 %
 \section{Technologies}
-Linux, cgroups,
-namespacing, socket,
-SSL, libarchive,
-PostgreSQL, Django,
-Google API, Amazon AWS EC2,
-Material Design
+\jobtitle{Linux admin} -- cgroups namespacing, SSL, SSH, libarchive, kernel, Xorg, nginx
+\jobtitle{Database} -- PostgreSQL
+\jobtitle{Webframeworks} -- Django, Google API
+\jobtitle{Cloud-computing} -- Amazon AWS EC2
 %
 \end{aside}
 
@@ -60,7 +57,7 @@ Material Design
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Work Experience}
+\section{Work}{Experience}
 
 \begin{entrylist}
 %------------------------------------------------
@@ -69,21 +66,22 @@ Material Design
   {Cornell University}
   {Ithaca, New York}
   {\jobtitle{Programmer}\\
-  Two summers working to implement statistical models in Mathematica and Python. Wrote front end to statistical modeling algorithms for research (letter of recommendation available upon request).}
+  Implemented statistical model front-ends in Mathematica and Python. \\(letter of recommendation available upon request).}
 \entry
   {Jun-2019}
   {Treman State Park}
   {Ithaca, New York}
-  {\jobtitle{Maintainance}\\
-Maintained state park facilities. Work included cleaning bathrooms, planting trees, clearing trails, and general maintenance. Worked independently for the majority of the day while also in charge of one other worker.
+  {\jobtitle{Maintenance}\\
+Maintained Park facilities and trails. Worked independently supervising on other persons.
   }
 
 \entry
   {Jun-2018}
   {Ithaca Streets and Facilities}
   {Ithaca, New York}
-  {\jobtitle{Building maitainance assistant}\\
-Assisted with basic heating, plumbing, A/C, fire alarm and fire sprinkler systems. Assisted with limited electrical, carpentry, etc.
+  {\jobtitle{Building maintenance assistant}\\
+Assisted with basic maintenance work including plumbing, HVAC, fire alarms, electrical, carpentry work.
+
   }
 %------------------------------------------------
 
@@ -139,28 +137,22 @@ Assisted with basic heating, plumbing, A/C, fire alarm and fire sprinkler system
 {2014-now}
 {AutoGentoo }
 {github.com}
-{A scalable Linux environment manager for creating optimized Gentoo Linux environments. Designed to bring higher performance to any platform at low maintenance cost. \\
-Technologies:
-\begin{itemize}%[label=$\bullet$, leftmargin=*]
-	\item C-level socket TCP/IP with TLS layer (OpenSSL)
-	\item Linux Namespace and cgroups API for Linux environment isolation.
-	\item Django web-application front-end, \textbf{\href{https://autogentoo.org}{autogentoo.org}} (rudimentary phase)
-	\item FOSS implementation, \textbf{\href{https://github.com/AutoGentoo/AutoGentoo}{https://github.com/AutoGentoo/AutoGentoo}}
-\end{itemize}
-
+{A scalable Linux environment manager for creating optimized Gentoo Linux environments. Designed to bring higher performance to any platform (embedded or desktop) at low maintenance cost. TCP over TLS for cross domain management. Linux namespacing and cgroups for environment isolation. Django-based front-end \\ (\textbf{\href{https://autogentoo.org}{autogentoo.org}}).\\
+\textbf{\href{https://github.com/AutoGentoo/AutoGentoo}{Github}}
 }
 
 \entry
 {2019-now}
 {CPortage}
 {github.com}
-{A highly optimized rewrite of the Gentoo package manager. Written in C, CPortage is able to complete I/O, the most taxing phase of a package manager's calculations in less then a tenth of a second. Gentoo's custom language standards (ebuild) was rewritten in the Bison/Flex grammar parser.}
+{A highly optimized rewrite of Gentoo's package manager. Optimized I/O and dynamic dependency calculations as well as a faster language parser. \textbf{\href{https://github.com/AutoGentoo/AutoGentoo/tree/develop/cportage}{Github}}
+}
 
 \entry
 {Jun-2019}
 {Raspberry Pi Quadcopter }
 {Ithaca High School}
-{3D printed quad-copter with a Raspberry Pi control. Implemented PID control for stabilization. Able to reach up to 7\,kHz frequency of PID control (limited by $I_2C$ baud rate). }
+{3D printed quad-copter with a Raspberry Pi control. Implemented PID control for closed-loop stabilization. \textbf{\href{https://github.com/Kronos3/Quadcopter}{Github}} }
 {\vspace{-0.3cm}}
 %------------------------------------------------
 \end{entrylist}
@@ -177,7 +169,7 @@ Technologies:
 {}
 {Technology Bowl 1\textsuperscript{st} place}
 {2018 TSA national competition -- Atlanta Georgia}
-{Technology Student Association team competition where 3 students compete against others across the country to test their knowledge across multiple STEM subjects (Computer Science, Biology, Chemistry, Physics, Engineering)}
+{Technology Student Association team competition. Teams compete to test their knowledge across multiple STEM subjects (Computer Science, Biology, Chemistry, Physics, Engineering)}
 
 \end{entrylist}
 \begin{entrylist}
@@ -187,7 +179,7 @@ Technologies:
 {}
 {Website Design 5\textsuperscript{th} place}
 {2018 TSA national competition -- Atlanta Georgia}
-{Team competition to develop a website on a given prompt as well as a second one promoting the team's chapter. Team consisted of two content writers, a graphic designer, and a programmer (me).}
+{Website front-end design as a team. Worked on CSS and Javascript frameworks as well as 3D graphics.}
 
 %------------------------------------------------
 
@@ -206,15 +198,16 @@ Technologies:
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{General Interests}
-  \vspace{-0.3cm}
+\section{General}{Interests}
+
+\vspace{-0.3cm}
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {}
 {Linux and Open-Source}
 {}
-{Love open-source and its development. Linux, being free, open-source and very customizable, has become a hobby of mine. }
+{Love open-source and linux because of freedom, design, and customizability.}
 
 \end{entrylist}\
 \begin{entrylist}
@@ -223,7 +216,7 @@ Technologies:
 {}
 {C}
 {}
-{Advanced use of C and many of the POSIX technologies. Wrote networking, thread schedulers, grammar parsers, advanced data structures, tree recursion and more. Around 3+ years of experience.}
+{Networking, thread schedulers, grammar parsers, advanced data structures, tree recursion. Around 3+ years of experience.}
 \end{entrylist}\
 \begin{entrylist}
 %------------------------------------------------
@@ -231,15 +224,16 @@ Technologies:
 {}
 {Python}
 {}
-{Python is a great tool for writing I/O scripts and complex string parsers. Also works well for front-end GUI design. Around 6+ years of experience.}
+{I/O scripts, complex string parsers, and polymorphic GUI design. Web frameworks like Django.}
 
 \end{entrylist}\
 %----------------------------------------------------------------------------------------
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Skills}
-  \vspace{-0.2cm}
+\section{Skills}{}
+
+\vspace{-0.2cm}
 
 \begin{entrylist}
 %------------------------------------------------

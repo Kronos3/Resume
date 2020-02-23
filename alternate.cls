@@ -160,7 +160,7 @@
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -172,16 +172,16 @@
         red\or%
         aquamarine\else%
         headercolor\fi%
-    } #1#2#3%
+    } #1
   }%
   \stepcounter{colorCounter}%
 }
 
-\renewcommand{\section}[1]{
+\renewcommand{\section}[2]{
   {\par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \LARGE\headingfont%
+    \@sectioncolor {#1} #2%
   }
   \par\vspace{\parskip}}
 }
