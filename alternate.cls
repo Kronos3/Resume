@@ -1,9 +1,8 @@
 % -- Encoding UTF-8 without BOM
 
-\ProvidesClass{cv-style}[2015/02/27 CV class]
+\ProvidesClass{alternate}[2020/02/21 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
-\DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
 }
@@ -71,6 +70,48 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage{tikz}
+\RequirePackage{pgf}
+\RequirePackage{pgfpages}
+
+\newcommand{\border}[0]{%
+	\pgfpagesdeclarelayout{boxed}
+	{
+	  \edef\pgfpageoptionborder{0pt}
+	}
+	{
+	  \pgfpagesphysicalpageoptions
+	  {%
+		logical pages=1,%
+	  }
+	  \pgfpageslogicalpageoptions{1}
+	  {
+		border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=.95\pgfphysicalwidth,%
+		resized height=.95\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	  }%
+	}
+
+	\pgfpagesuselayout{boxed}
+}
+
+\newcommand{\bordersecond}[0]{
+	{
+	  \pgfpagesphysicalpageoptions
+	  {%
+		logical pages=2,%
+	  }
+	  \pgfpageslogicalpageoptions{2}
+	  {
+		border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=.95\pgfphysicalwidth,%
+		resized height=.95\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	  }%
+	}
+}
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
