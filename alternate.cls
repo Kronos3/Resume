@@ -3,6 +3,7 @@
 \ProvidesClass{alternate}[2020/02/21 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
+\DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
 }
@@ -37,8 +38,8 @@
   \colorlet{green}{gray}
   \colorlet{purple}{gray}
   \colorlet{aquamarine}{gray}
-  \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{fillheader}{gray}
+  \colorlet{header}{white}
 \else
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
