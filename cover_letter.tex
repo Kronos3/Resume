@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[16pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete,
+% awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+ 
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Andrei}{ Tumbar}
+\address{Rochester Institute of Technology}
+\mobile{(+1) 607-379-0960} 
+%%% Social
+\email{at1777@rit.edu}
+\github{kronos3}
+%\linkedin{posquit0}
+%%% Optionals
+\position{BSeng Candidate{\enskip\cdotp\enskip}Computer Engineering}
+%\quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  { SAAB }
+  {Syracuse, NY}
+\letterdate{\today}
+\lettertitle{The position as Test Engineer Co-Op/Intern}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Sincerely,}
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today }
+  {Andrei Tumbar~~~·~~~Cover Letter}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+%%% Make a title for Cover Letter using letter data
+%\makelettertitle
+%%% Write content for your cover letter
+\vspace{3cm}
+\begin{cvletter}
+\cvparagraph{Dear Hiring Management,}
+
+\par I am a Computer Engineering student at Rochester Institute of Technology looking for a summer co-op/internship. I came to learn about SAAB at the RIT career fair on 2/26/20 and read more about the work you do here. Because of my extensive Linux knowledge as well as experience in C, Python, and Java I think I am a strong candidate for the Software Engineering position. I have worked on a long-term project where I am looking to make Gentoo Linux a more mainstream/viable operating system. Through this project, I have been exposed to most of the Linux subsystems and understand its inner workings. Beyond Linux, I have worked with network programming, multi-threaded scheduling, tree-recursion, advanced data-types as well as web-frameworks. My Github (github.com/Kronos3) has over 20 repositories of projects I have worked on over the years from robot control to website design and everything in between.
+
+\par I think that all of these skills described make me a perfect candidate for an internship position at SAAB. While talking with Diego Gomes during the RIT career fair, I learned about the sort of work I would be doing here. Having experience in a wide variety of areas as well as being able to learn new things independently will be useful as a software engineer. Thank you for considering my application, I look forward to hearing from you.
+
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}
