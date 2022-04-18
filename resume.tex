@@ -13,7 +13,7 @@
 }
 \begin{document}
 
-\header{Andrei}{ Tumbar}           % Your name
+\header{Andrei}{Tumbar}           % Your name
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION  -- In the aside, each new line forces a line break
@@ -44,7 +44,7 @@ AJAX, \LaTeX{}
 %
 %
 \section{Technologies}
-Linux, cgroups,
+FPrime, Linux, cgroups,
 AddressSanitizer,
 FreeRTOS,
 namespacing, socket,
@@ -68,10 +68,10 @@ CPython, libclang
 \begin{entrylist}
 %------------------------------------------------
 \entry
-  {Aug-2020\\Aug-2021}
+  {Aug-2020\\Apr-2022}
   {Jet Propulsion Laboratory - NASA}
   {Remote}
-  {\jobtitle{Development Operations (Surface Ops)}\\
+  {\jobtitle{Robotics Engineering Intern}\\
   Worked full time as a developer for the Mars-2020 project (Perseverance). Worked on SSim, a simulation program for modeling Mars-2020 rover flight software for rover planners to test their command sequences before instructing the real rover on Mars. Also worked on a new lunar arm mission planned for 2023 launch: COLDArm. Made the JPL's flight-software development framework, FPrime, usable as a simulation platform for deterministic development and mission operation planning.
   }
 \entry
@@ -109,6 +109,7 @@ Maintained state park facilities. Work included cleaning bathrooms, planting tre
 	\item Embedded and Realtime Systems
 	\item Calculus I-IV, Uni-Phys I-II
 	\item Linear Algebra \& Boundary Value+Diffeq \& Complex Variables
+	\item Interface to Digital Electronics
 \end{itemize}
 }
 {Rochester Institute of Technology}
@@ -127,25 +128,38 @@ Maintained state park facilities. Work included cleaning bathrooms, planting tre
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2020-now}
+{Spring 2022}
+{Raspberry Pi Autonomous Vehicle}
+{https://github.com/Kronos3/vo-cmpe460}
+{Class project used a simple line-scan camera to control small battery powered car around
+a race track. This project is an extension of the class project in which a Raspberry
+Pi will use a 2D camera and apply vision  processing to image frames for edge detection
+of track lines. Software is built on top of the FPrime Flight-Software framework.}
+\entry
+{2021-now}
+{Neoast}
+{https://github.com/AutoGentoo/neoast}
+{Modern compiler-compiler written to generate LALR(1) and CLR(1) parsing tables as well
+as a full lexer/parser combination. The purpose of this is to replace old and bloated
+implementations such as Bison and Flex and utilizes compiler-time FSM generation for
+regular expressions during lexing as well as a re-entrant design during parsing.}
+\entry
+{Summer 2020}
 {Phase Electron Microscope}
 {Closed-source}
 {Object-oriented approach to controlling various devices in data acquisition for a phase electron microscope. Designed so that any devices can be easily swapped out with very view changes to the overall system. Learned about programming hardware and performing image processing through GPU programming. Also learned how to program DAC on FPGA to control galvo mirrors controlling laser direction.}
-
+\end{entrylist}
+\begin{entrylist}
 \entry
 {2014-now}
 {AutoGentoo }
-{github.com}
+{https://github.com/AutoGentoo/AutoGentoo}
 {A scalable Linux environment manager for creating optimized Gentoo Linux environments. Designed to bring higher performance to any platform at low maintenance cost.
-\begin{itemize}
-	\item FOSS implementation: \textbf{\href{https://github.com/AutoGentoo/AutoGentoo}{https://github.com/AutoGentoo/AutoGentoo}}
-\end{itemize}
 }
-
 \entry
 {2019-now}
 {CPortage}
-{github.com}
+{https://github.com/AutoGentoo/cportage}
 {A highly optimized rewrite of the Gentoo package manager. Written in C, CPortage is able to complete I/O, the most taxing phase of a package manager's calculations in less then a tenth of a second. Gentoo's custom language standards (ebuild) was rewritten in the Bison/Flex grammar parser.}
 
 {\vspace{-0.3cm}}
@@ -155,7 +169,6 @@ Maintained state park facilities. Work included cleaning bathrooms, planting tre
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-\newpage
 \section{General Interests}
   \vspace{-0.3cm}
 \begin{entrylist}
